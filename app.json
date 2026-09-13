@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "STORM PATH",
+    "slug": "storm-path-app",
+    "scheme": "stormpath",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#071018"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "byte.dominiccalandro.stormpath",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "STORM PATH uses your location for weather-aware navigation and the telemetry HUD.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Background location powers severe-weather geofence alerts.",
+        "NSMotionUsageDescription": "Motion and barometer feed dead-reckoning and micro-climate pressure."
+      }
+    },
+    "android": {
+      "package": "byte.dominiccalandro.stormpath",
+      "adaptiveIcon": {
+        "backgroundColor": "#071018"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "STORM PATH uses your location for weather-aware navigation.",
+          "locationAlwaysAndWhenInUsePermission": "Background location powers severe-weather geofence alerts.",
+          "isIosBackgroundLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
