@@ -1,0 +1,25 @@
+{
+  "repo": "dominiccalandro1991-byte/storm-path-app",
+  "incomplete": false,
+  "missing_dependencies": [
+    "lockfile"
+  ],
+  "required_build_specs": [
+    "commit package-lock.json or pnpm-lock.yaml",
+    "voltcore-heartbeat workflow"
+  ],
+  "file_count": 11,
+  "root_entries": [
+    ".gitignore",
+    "GPS_COVERAGE.md",
+    "README.md",
+    "app.json",
+    "app",
+    "assets",
+    "babel.config.js",
+    "expo-env.d.ts",
+    "package.json",
+    "src",
+    "tsconfig.json"
+  ]
+}
